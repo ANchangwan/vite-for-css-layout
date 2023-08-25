@@ -1,0 +1,11 @@
+div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.box {
+  background-color: tomato;
+  width: 200px;
+  height: 200px;
+}
