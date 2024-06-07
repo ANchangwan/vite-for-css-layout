@@ -50,10 +50,33 @@
 </aside>
 
 - 부모를 기준으로 두줄 이상의 정렬을 한다.
--
 
 items와 content의 차이는?
 
 items 👉 item을 어떻게 배치 할 것인가에 대한 속성
 
 content 👉 item의 줄 간격을 어떻게 배치 할 것인가에 대한 속성
+
+# Auto Sizing and Minmax
+
+## min-content / max-content
+✍️ min-content
+단어 중에서 가장 큰 값을 기준으로 셀 크기를 정함
+✍️ max-content
+전체 단어 길이를 기준으로 셀 크기를 정함
+✍️minmax
+    - 반응형으로 만듬
+    - 최소로 줄어들 크기, 최대로 커질 크기를 정함
+    - grid-template-columns: 1fr minmax(250px, 1fr) 1fr 또는 repeat(3, minmax(250px, 1fr)) 
+
+# ✅ auto-fill & auto-fit
+
+두개의 차이는 남는 여백으로 사용이 달라진다.
+
+✍️auto-fill
+
+최대한 많은 아이템을 배치하고, 남은 공간은 비어있게 둡니다.
+
+✍️ auto-fit
+
+필요한 만큼의 아이템을 배치하고, 남은 공간은 아이템을 늘려 채웁니다.
