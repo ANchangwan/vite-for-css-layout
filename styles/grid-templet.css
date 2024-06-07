@@ -1,0 +1,19 @@
+.father {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  background-color: lightblue;
+  align-content: center;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  border: 2px solid black;
+  font-size: 28px;
+  color: white;
+}

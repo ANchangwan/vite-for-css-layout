@@ -1,30 +1,59 @@
-# 👉Vite: 차세대 프론트엔드 개발 도구
-Vite는 Vue.js의 창시자인 Evan You가 개발한 도구로, 기존의 웹 개발 도구와는 다른 새로운 개발 경험을 제공합니다.
+# CSS
 
-## Vite란 무엇인가요?
-Vite는 프론트엔드 개발을 위한 빠르고 가벼운 도구입니다. "Vite"라는 이름은 프랑스어로 "빠른"이라는 뜻을 가지고 있으며, 이 이름처럼 Vite는 개발 속도를 극적으로 향상시켜줍니다. Vite의 핵심 목표는 개발 서버에서의 초고속 개발과 실시간 모듈 번들링을 가능하게 하는 것입니다.
+# ✅ Grid
 
-## <span style="background-color:#dcffe4; color:#2D3748">✍️왜 Vite를 사용해야 하나요?</span>
+- **_grid란_**수평선과 수직선이 교차해서 이루어진 집합체
+- 하나의 집합체는 세로 열을 그리고 다른 하나는 가로 행을 정의
 
-### 1. 초고속 개발 서버
-Vite는 빠른 개발을 위해 기존 웹팩(Webpack)과는 다른 방식으로 동작합니다. 개발 서버가 실시간으로 변경 사항을 감지하고 브라우저에 빠르게 반영됩니다. 이것은 개발자들이 코드를 수정하고 새로 고침하지 않아도 변경 사항을 즉시 확인할 수 있게 해줍니다.
+# ✅ grid-auto
 
-### 2. 빠른 빌드
-Vite는 개발 모드에서도 빠르지만, 프로덕션 빌드 역시 빠릅니다. 빌드 시간이 길어지는 문제를 해결하기 위해 Vite는 모듈을 미리 번들링하지 않고 실시간으로 번들링하여 최적화합니다.
+<aside>
+✍🏻 grid-auto-rows && grid-auto-columns
 
-### 3. 다양한 프레임워크 지원
-Vite는 Vue.js를 기본적으로 지원하지만, React, Preact, Lit Element, Svelte 등 다양한 프레임워크와 라이브러리를 지원합니다. 이는 여러 가지 프로젝트에서 사용할 수 있는 유연성을 제공합니다.
+</aside>
 
-## ⭐️Vite 시작하기
-```
-1. Node.js 설치
-2. 프로젝트 생성
+- 동적으로 grid를 설정하고 싶을 때 사용
+- 2 x 2 grid에서 만약에 추가로 열이 추가 될 때 그 열에 크기를 동적으로 설정 가능
 
-npm create vite@latest [my-vite-project]
-```
-3.프로젝트 디렉토리로 이동하고 종속성 설치:
-```
-cd [my-vite-project]
-npm install
-```
+<aside>
+✍🏻 grid-auto-flow
 
+</aside>
+
+- 동적으로 추가되는 형태를 설정할 수있음
+  - grid-auto-flow: row OR column
+
+# ✅ align, justify
+
+- align은 세로축을 의미한다
+- justify는 가로축을 의미한다.
+-
+
+<aside>
+✍🏻 items
+
+</aside>
+
+- items는 부모를 기준으로 하나의 수직,수평 선을 정령한다.
+
+<aside>
+✍🏻 self
+
+</aside>
+
+- 자식을 기준으로 움직인다.
+- grid-column or row : span 2를 하면 두개의 영역을 가진다.
+
+<aside>
+✍🏻 content
+
+</aside>
+
+- 부모를 기준으로 두줄 이상의 정렬을 한다.
+-
+
+items와 content의 차이는?
+
+items 👉 item을 어떻게 배치 할 것인가에 대한 속성
+
+content 👉 item의 줄 간격을 어떻게 배치 할 것인가에 대한 속성
