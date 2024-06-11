@@ -1,0 +1,113 @@
+@import "./reset.scss";
+
+body {
+  background-color: #dbe5d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.phone {
+  background-color: black;
+  border-radius: 50px;
+  height: 95%;
+  width: 425px;
+  padding: 50px 10px;
+  box-sizing: border-box; //?
+}
+.header {
+  overflow-x: scroll;
+  .header__list {
+    display: flex;
+    color: white;
+    gap: 10px;
+    width: max-content; //?
+    .header__list-item {
+      border: 1px solid rgba($color: #fff, $alpha: 0.5);
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+  .header__list-item--inverter {
+    background-color: white;
+    color: black;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+  .cards__card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    .cards__title {
+      font-size: 28px;
+    }
+    .cards__footer {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: 1px solid black;
+      }
+      .cards__price {
+      }
+      .cards__length {
+        background-color: white;
+      }
+    }
+    &:first-child {
+      color: white;
+      background-color: #292d32;
+      border-radius: 1px solid white;
+      .cards__price {
+        color: white;
+      }
+    }
+    &:nth-child(2) {
+      background-color: white;
+      .cards__price {
+        background-color: yellow;
+      }
+    }
+    &:nth-child(3) {
+      background-color: #fafec1;
+      .cards__price {
+        background-color: pink;
+      }
+    }
+    &:nth-child(4) {
+      background-color: #baa9f8;
+      .cards__price {
+        background-color: yellow;
+      }
+    }
+    &:nth-child(5) {
+      background-color: #fed0d0;
+      .cards__price {
+        background-color: yellow;
+      }
+    }
+    &:nth-child(6) {
+      background-color: #d1ffdd;
+      .cards__price {
+        background-color: pink;
+      }
+    }
+    &:nth-child(3n) {
+      grid-column: span 2;
+    }
+  }
+}
