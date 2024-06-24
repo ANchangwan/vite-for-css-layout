@@ -1,11 +1,9 @@
 @import "./reset.scss";
 
 body {
-  background-color: #a2e571;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  box-sizing: content-box;
-  width: 100%;
+  background-color: #a2e571;
 }
