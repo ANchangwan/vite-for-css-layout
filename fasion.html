@@ -2,26 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"x content="width=\, initial-scale=1.0" />
-    <title>Fashion App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.scss" />
+    <title>CSS Layout Masterclass</title>
   </head>
   <body>
     <div class="phone">
-      <div class="header">
-        <div class="header__items">
-          <i class="fa-solid fa-chevron-left"></i>
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="header__title">MY CART</div>
-        <div class="header__items">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <div class="header__cart header__cart--count"></div>
-        </div>
-      </div>
+      <header class="header">
+        <span class="header__btn">👈🏻</span>
+        <h1 class="header__title">My Cart</h1>
+        <span class="header__btn">🛒</span>
+      </header>
+      <section class="total">
+        <span class="total__price">$3550</span
+        ><span class="total__subtitle">based on your 5 items.</span>
+      </section>
+      <section class="items">
+        <article class="item">
+          <div class="item__info">
+            <div class="item__info-col">
+              <h2 class="item__title">Pop Temple Print T-Shirt</h2>
+              <h3 class="item__subtitle">limited 2002</h3>
+            </div>
+            <div class="item__info-col">
+              <span class="item__total-price">$1990</span>
+              <div class="item__piece-price">$995 per piece</div>
+            </div>
+          </div>
+          <div class="item__specs">
+            <div class="spec">
+              <span class="spec__title">Size</span>
+              <div class="spec__value">48 - L</div>
+            </div>
+            <div class="spec">
+              <span class="spec__title">QT</span>
+              <div class="spec__value">2 pcs</div>
+            </div>
+          </div>
+          <img src="./assets/20210428504000.jpg" class="item__photo" />
+        </article>
+      </section>
     </div>
-    <script
-      src="https://kit.fontawesome.com/705e435580.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
