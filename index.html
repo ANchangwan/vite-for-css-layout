@@ -7,69 +7,109 @@
     <title>CSS Layout Masterclass</title>
   </head>
   <body>
-    <nav class="nav-bar">
-      <div class="nav-bar__item"></div>
-      <div class="nav-bar__item">Best Sellers</div>
-      <div class="nav-bar__item">Hand Sanitizer</div>
-      <div class="nav-bar__item">Hand Cream</div>
-      <div class="nav-bar__item">Refills</div>
-      <div class="nav-bar__item">HVVN</div>
-      <div class="nav-bar__item">Toothpaste</div>
-      <div class="nav-bar__item">Hand Soap</div>
-      <div class="nav-bar__item">combos</div>
-      <div class="nav-bar__item"></div>
-      <div class="nav-bar__item"></div>
-    </nav>
-    <div class="menu-status">Home/Catalog/Hand Soap/Sunset Fleur</div>
-    <section class="product">
-      <div class="product__img">
-        <img src="" alt="" />
-        <div class="product__move">
-          <div class="product__left"></div>
-          <div class="product__right"></div>
+    <div class="header">
+      <ul class="header__items">
+        <li class="header__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </li>
+        <li class="header__item">Best Seller</li>
+        <li class="header__item">Hand Sanitizer</li>
+        <li class="header__item">Hand Cream</li>
+        <li class="header__item">Refills</li>
+        <li class="header__item">HAAN</li>
+        <li class="header__item">Toothpaste</li>
+        <li class="header__item">Hand Soap</li>
+        <li class="header__item">Combos</li>
+        <li class="header__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+          </svg>
+        </li>
+        <li class="header__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+        </li>
+      </ul>
+      <div class="category">Home / Catalog / Hand Soap / summer flauer</div>
+    </div>
+
+    <section class="items">
+      <img
+        class="item__info-col"
+        src="https://picsum.photos/200/300"
+        alt="random img"
+      />
+      <div class="items__info-col">
+        <div class="item__spec">
+          <div class="item__title">
+            <span class="title__subtitle">Hand Soap</span>
+            <span class="title__maintitle">Summer Flauer</span>
+          </div>
+          <div class="item__detail">
+            <span class="item__detail-cnt"><span>-</span>1<span>+</span></span>
+            <span class="item__detail-price">11,89$</span>
+            <div class="item__detail--icon">Add a Cart</div>
+          </div>
         </div>
-      </div>
-      <div class="detail">
-        <div class="banner">
-          <div class="banner__name">
-            <span class="banner__kind">HAND SOAP</span>
-            <h1 class="banner__title">SUNSET FLEUR</h1>
-          </div>
-          <div class="price">
-            <span class="price__quantity">-1+</span>
-            <span class="price__value">11.90$</span>
-            <div class="price__star">
-              <img src="" alt="" />
-              <div class="price__title">add to cart</div>
+        <div class="product__footer">
+          <div class="product__footer-col">
+            <div class="product__descriptions">
+              <h1>Summer fleur</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                quam eaque deserunt. Ullam, dignissimos corrupti officia
+                voluptatum facilis iusto accusamus! Dolorum excepturi quae placeat
+                quasi ex magni assumenda ullam blanditiis.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="text">
-          <div class="text__explain">
-            <h1 class="text__title">Feminine floral breeze</h1>
-            <p>
-              Get your hands perfectly clean without any sign of dryness with
-              our Sunset Fleur Hand Soap. A gentle mix between a floral scent
-              and a premium gel formula using coco Nucifere and Aloe Vera
-            </p>
-          </div>
-          <div class="text__add">
-            <div class="text__bar">
-              <h2 class="text__title">HOW TO USE</h2>
-              <span>+</span>
-            </div>
-            <div class="text__bar">
-              <h2 class="text__title">INGREDIENTS</h2>
-              <span>+</span>
-            </div>
-            <div class="text__bar">
-              <h2 class="text__title">SHIPPING & PAYMENT</h2>
-              <span>+</span>
+          <div class="product__footer-col">
+            <div class="product__faq">
+              <div class="product__question">How to use<span>+</span></div>
+              <div class="product__question">Ingredients<span>+</span></div>
+              <div class="product__question">Shipping<span>+</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <script
       src="https://kit.fontawesome.com/705e435580.js"
       crossorigin="anonymous"
